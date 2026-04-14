@@ -1,5 +1,7 @@
 # <img width="1552" height="126" alt="image" src="https://github.com/user-attachments/assets/97f8bf23-ed39-43b6-964a-ecfe0dc4492b" />
 
+<img width="1009" height="588" alt="image" src="https://github.com/user-attachments/assets/d65927c5-5d97-4585-a77a-84d8cc5c931b" />
+
 
 Ce projet implémente le déploiement d’un site web statique en s’appuyant sur une architecture Cloud distribuée et hautement disponible sur AWS.
 
@@ -8,12 +10,12 @@ L’objectif est de démontrer une approche production-ready combinant hébergem
 ## ☁️ Architecture globale
 
 L’architecture repose sur les composants suivants :
-	•  Amazon S3 : stockage des fichiers statiques (HTML, CSS, JavaScript, assets)
-	•  Amazon CloudFront : CDN pour la distribution globale avec mise en cache
-	•  Amazon Route 53 : gestion DNS et routage du domaine personnalisé
-	•  AWS Amplify Hosting : déploiement automatisé et pipeline CI/CD
-	•  GitHub : gestion du code source et déclenchement des déploiements.
 
+- Amazon S3 : stockage des fichiers statiques (HTML, CSS, JavaScript, assets)
+- Amazon CloudFront : CDN pour la distribution globale avec mise en cache
+- Amazon Route 53 : gestion DNS et routage du domaine personnalisé
+- AWS Amplify Hosting : déploiement automatisé et pipeline CI/CD
+- GitHub : gestion du code source et déclenchement des déploiements
 
 ## 🔄 Flux de fonctionnement
 	1.  Le code source est versionné sur GitHub
@@ -29,8 +31,8 @@ L’architecture repose sur les composants suivants :
 	•	Bucket configuré pour l’hébergement statique
 	•	Activation de Static Website Hosting
 	•	Configuration des fichiers :
-    index.html (root)
-	  error.html (fallback)
+           index.html (root)
+	       error.html (fallback)
 
 ### 🌍 Distribution (CloudFront)
 	•	Origin configuré vers S3
